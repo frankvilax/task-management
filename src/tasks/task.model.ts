@@ -1,12 +1,8 @@
-export interface Task {
-  id: string;
+import { TaskStatus } from "./task-status.enum";
+
+export class Task {
+  id: number;
   title: string;
   description: string;
   status: TaskStatus;
-}
-
-export enum TaskStatus {
-  OPEN = 'OPEN',
-  IN_PROGRESS = 'IN_PROGRESS',
-  DONE = 'DONE',
 }
